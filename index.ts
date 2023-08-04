@@ -1,4 +1,4 @@
-require("dotenv").config({ path: "./.env.local" });
+require("dotenv").config();
 import express, { Express, Request, Response } from "express";
 import mongoose from "mongoose";
 import authRouter from "./routes/authRoutes";
@@ -32,12 +32,7 @@ app.listen(1231, () => {
     console.log(`server api online at : http://localhost:1231`);
 });
 
-app.use(
-    cors({
-        origin: "http://localhost:5173",
-        credentials: true,
-    })
-);
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/api/auth/", authRouter);
