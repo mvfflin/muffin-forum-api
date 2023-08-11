@@ -2,7 +2,7 @@
     "dependencies": {
         "@types/bcryptjs": "^2.4.2",
         "@types/jsonwebtoken": "^9.0.1",
-        "bcryptjs": "^2.4.3",
+        "bcrypt": "^5.1.0",
         "cors": "^2.8.5",
         "date-and-time": "^2.4.3",
         "dotenv": "^16.0.3",
@@ -26,5 +26,6 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "description": ""
+    "description": "",
+    "type": "module"
 }

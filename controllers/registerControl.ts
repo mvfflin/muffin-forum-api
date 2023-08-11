@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { user } from "../schema/user";
-import { genSaltSync, hashSync } from "bcryptjs";
+import { genSaltSync, hashSync } from "bcrypt";
 import jwt from "jsonwebtoken";
 import date from "date-and-time";
 

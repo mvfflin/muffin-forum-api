@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { user } from "../schema/user";
-import { compareSync } from "bcryptjs";
+import { compareSync } from "bcrypt";
 import * as jwt from "jsonwebtoken";
 
 export const loginControl = async (req: Request, res: Response) => {
