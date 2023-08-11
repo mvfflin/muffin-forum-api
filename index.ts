@@ -1,10 +1,12 @@
-require("dotenv").config();
+import dotenv from "dotenv";
 import express, { Express, Request, Response } from "express";
 import mongoose from "mongoose";
 import authRouter from "./routes/authRoutes";
 import { userRouter } from "./routes/userRoutes";
 import { accountRouter } from "./routes/accountRoutes";
 import cors from "cors";
+
+dotenv.config();
 
 const app: Express = express();
 
