@@ -21,7 +21,7 @@
         "@types/express": "^4.17.17"
     },
     "scripts": {
-        "test": "nodemon index.ts"
+        "test": "ts-node index.ts"
     },
     "keywords": [],
     "author": "",
