@@ -7,6 +7,7 @@
         "esModuleInterop": true,
         "module": "ES6",
         "target": "ES5",
-        "moduleResolution": "Node"
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true
     }
 }
