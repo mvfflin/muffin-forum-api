@@ -4,16 +4,14 @@
         "experimentalSpecifierResolution": "node",
         "compilerOptions": {
             "esModuleInterop": true,
-            "module": "ES6",
-            "target": "ES5",
+            "module": "ESNext",
             "moduleResolution": "Node",
             "allowSyntheticDefaultImports": true
         }
     },
     "compilerOptions": {
         "esModuleInterop": true,
-        "module": "ES6",
-        "target": "ES5",
+        "module": "ESNext",
         "moduleResolution": "Node",
         "allowSyntheticDefaultImports": true
     }
