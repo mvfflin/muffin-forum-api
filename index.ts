@@ -51,7 +51,6 @@ async function checkMongo() {
   }
 }
 checkMongo();
-setInterval(checkMongo, 10000);
 
 server.listen(1231, () => {
   console.log(`server api online at : http://localhost:1231`);
@@ -62,6 +61,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/auth/", authRouter);
 app.use("/api/users/", userRouter);
 app.use("/api/account/", accountRouter);
+app.use(checkMongo);
 
 app.get("/", (req: Request, res: Response) => {
   console.log("api pinged");
